@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { AlertCircle, ArrowRight, ArrowUpRight, Check, CircleHelp, Hash, Link2, LockKeyhole, ShieldCheck, Upload } from 'lucide-react';
 import { sha256 } from '../lib/hash';
-import { countCharacters, countUtf8Bytes, LIMITS, validateProofPayload, validateSafeUrl } from '../lib/proof-schema';
+import { countCharacters, countUtf8Bytes, EXPERIMENTAL_FLAG, LIMITS, validateProofPayload, validateSafeUrl } from '../lib/proof-schema';
 
 type FormStatus = 'idle' | 'hashing' | 'ready' | 'broadcasting' | 'broadcasted' | 'error';
 
@@ -56,6 +56,7 @@ async function handleSubmit(event: { preventDefault(): void }) {
 			title: title.trim(),
 			document_url: documentUrl.trim(),
 			app: 'proof-existence',
+			experimental: EXPERIMENTAL_FLAG,
 		};
 		if (description.trim()) payload.description = description.trim();
 		if (extraUrl.trim()) payload.extra_url = extraUrl.trim();

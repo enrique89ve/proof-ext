@@ -20,10 +20,13 @@ export type ProofPayload = {
 	hash_origen?: string;
 	hash_origen_algorithm?: string;
 	app: string;
+	experimental: string;
 };
 
 const hasOnlyStringValues = (value: Record<string, unknown>) =>
 	Object.values(value).every((entry) => typeof entry === 'string');
+
+export const EXPERIMENTAL_FLAG = 'true';
 
 export const countCharacters = (value: string) => Array.from(value).length;
 
