@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Proof Existence</title>
+  <desc id="desc">Símbolo de una prueba verificada</desc>
+  <rect id="background" width="64" height="64" rx="16" fill="#355F68"/>
+  <circle id="verification-ring" cx="32" cy="32" r="20" fill="none" stroke="#DCEBED" stroke-width="4"/>
+  <circle id="accent-dot" cx="48" cy="16" r="4" fill="#D9A85F"/>
+  <path id="verification-check" d="m20 32 8 8 16-16" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

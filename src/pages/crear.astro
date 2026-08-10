@@ -1,0 +1,19 @@
+---
+import CreateProofPage from '../components/CreateProofPage';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Crea una prueba de existencia y prepárala para firmar en Hive." />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Crear prueba · Proof Existence</title>
+	</head>
+	<body>
+		<CreateProofPage client:load />
+		<footer class="mx-auto flex max-w-7xl flex-col gap-3 border-t border-ocean/10 px-5 py-8 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"><span>Proof Existence · versión experimental</span><span>La blockchain prueba existencia e integridad; no sustituye asesoría legal.</span></footer>
+	</body>
+</html>
